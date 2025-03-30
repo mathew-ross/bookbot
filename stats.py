@@ -11,3 +11,7 @@ def get_character_dict(book_text):
       else:
          character_dict[lchar] += 1
   return character_dict
+
+def get_sorted_dict(unsorted_dict):
+  sorted_dict = dict(sorted(unsorted_dict.items(), key=lambda item:item[1], reverse=True))
+  return sorted_dict
